@@ -1,0 +1,6 @@
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\bin\Debug\Heron_blagajna.exe.config
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\bin\Debug\Heron_blagajna.exe
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\bin\Debug\Heron_blagajna.pdb
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\obj\Debug\Heron_blagajna.csprojResolveAssemblyReference.cache
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\obj\Debug\Heron_blagajna.exe
+D:\My Documents\Mladen\Visual Studio 2013\Projects\Heron_blagajna\Heron_blagajna\obj\Debug\Heron_blagajna.pdb
