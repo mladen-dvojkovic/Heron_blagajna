@@ -22,71 +22,20 @@ namespace Heron_blagajna
         {
             int temp_ostatak = Placeno - Cijena;
 
-            int _1000, _500, _200, _100, _50, _20, _10, _5, _1 = 0;
+            int _temp_novcanica = 0;
 
-            if (temp_ostatak >= 1000)
-            {
-                _1000 = temp_ostatak / 1000;
-                Console.WriteLine("Novčanice od 1000kn: " + _1000);
-                temp_ostatak %= 1000;
+            int[] novcanice = new int[] {1000, 500, 200, 100, 50, 20, 10, 5, 1};
+
+            for(int i = 0; i < novcanice.Length; i++){
+                //Console.WriteLine(novcanice[i]);
+
+                if (temp_ostatak >= novcanice[i])
+                {
+                    _temp_novcanica = temp_ostatak / novcanice[i];
+                    Console.WriteLine("Novčanice od {0}kn: " + _temp_novcanica, novcanice[i]);
+                    temp_ostatak %= novcanice[i];
+                }
             }
-
-            if (temp_ostatak >= 500)
-            {
-                _500 = temp_ostatak / 500;
-                Console.WriteLine("Novčanice od 500kn: " + _500);
-                temp_ostatak %= 500;
-            }
-
-            if (temp_ostatak >= 200)
-            {
-                _200 = temp_ostatak / 200;
-                Console.WriteLine("Novčanice od 200kn: " + _200);
-                temp_ostatak %= 200;
-            }
-
-            if (temp_ostatak >= 100)
-            {
-                _100 = temp_ostatak / 100;
-                Console.WriteLine("Novčanice od 100kn: " + _100);
-                temp_ostatak %= 100;
-            }
-
-            if (temp_ostatak >= 50)
-            {
-                _50 = temp_ostatak / 50;
-                Console.WriteLine("Novčanice od 50kn: " + _50);
-                temp_ostatak %= 50;
-            }
-
-            if (temp_ostatak >= 20)
-            {
-                _20 = temp_ostatak / 20;
-                Console.WriteLine("Novčanice od 20kn: " + _20);
-                temp_ostatak %= 20;
-            }
-
-            if (temp_ostatak >= 10)
-            {
-                _10 = temp_ostatak / 10;
-                Console.WriteLine("Novčanice od 10kn: " + _10);
-                temp_ostatak %= 10;
-            }
-
-            if (temp_ostatak >= 5)
-            {
-                _5 = temp_ostatak / 5;
-                Console.WriteLine("Novčanice od 5kn: " + _5);
-                temp_ostatak %= 5;
-            }
-
-            if (temp_ostatak >= 1)
-            {
-                _1 = temp_ostatak / 1;
-                Console.WriteLine("Novčanice od 1kn: " + _1);
-                temp_ostatak %= 1;
-            }
-
         }
     }
 }
