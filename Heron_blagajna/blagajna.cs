@@ -8,6 +8,8 @@ namespace Heron_blagajna
 {
     class Blagajna
     {
+        private int[] novcanice = new int[] { 1000, 500, 200, 100, 50, 20, 10, 5, 1 };
+
         public int Cijena { get; set; }
 
         public int Placeno { get; set; }
@@ -17,14 +19,12 @@ namespace Heron_blagajna
             int ostatak = Placeno - Cijena;
             return ostatak;
         }
-
+        
         public void Novcanice()
         {
             int temp_ostatak = Placeno - Cijena;
 
             int _temp_novcanica = 0;
-
-            int[] novcanice = new int[] {1000, 500, 200, 100, 50, 20, 10, 5, 1};
 
             for(int i = 0; i < novcanice.Length; i++){
                 //Console.WriteLine(novcanice[i]);
